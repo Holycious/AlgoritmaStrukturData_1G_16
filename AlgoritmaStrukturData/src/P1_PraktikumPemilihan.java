@@ -73,10 +73,16 @@ public class P1_PraktikumPemilihan {
         System.out.println("Nilai Akhir: " + hitungRata);
         String nilaiAbjad = "D";
         System.out.println("Nilai Huruf: " + nilaiAbjad);
+        System.out.println("==============================");
+        System.out.println("MOHON MAAF ANDA TIDAK LULUS");
+        System.out.println("==============================");
       } else if (hitungRata > 73 && hitungRata <= 80) {
         System.out.println("Nilai Akhir: " + hitungRata);
         String nilaiAbjad = "E";
         System.out.println("Nilai Huruf: " + nilaiAbjad);
+        System.out.println("==============================");
+        System.out.println("MOHON MAAF ANDA TIDAK LULUS");
+        System.out.println("==============================");
       }
     } if (valid == false) {
         System.out.println("Nilai Invalid!");
