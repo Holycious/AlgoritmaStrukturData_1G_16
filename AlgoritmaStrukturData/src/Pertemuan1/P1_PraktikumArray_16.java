@@ -97,7 +97,7 @@ public class P1_PraktikumArray_16 {
         }
         totalNilai = totalNilai / 18;
         System.out.println("IP: "+totalNilai);
-        
+        input.close();
         
 }
 }
