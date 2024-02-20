@@ -5,11 +5,11 @@ public class Buku16 {
     int halaman,stok,harga;
 
     void tampilInformasi(){
-        System.out.println("Judul      : "+judul);
+        System.out.println("Judul     : "+judul);
         System.out.println( "Pengarang : "+pengarang);
         System.out.println( "Halaman   : "+halaman+" Hal");
-        System.out.println( "Stok     : "+stok+" buah");
-        System.out.println( "Harga    : Rp."+harga);
+        System.out.println( "Stok      : "+stok+" buah");
+        System.out.println( "Harga     : Rp."+harga);
     }
 
     void terjual(int jml){
