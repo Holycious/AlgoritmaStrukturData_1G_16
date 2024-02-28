@@ -19,6 +19,7 @@ public class PersegiPnajangMain {
         System.out.println("Persegi panjang ke-0, panjang: "+ ppArray[0].panjang + ", lebar: "+ ppArray[0].lebar);
         System.out.println("Persegi panjang ke-1, panjang: "+ ppArray[1].panjang + ", lebar: "+ ppArray[1].lebar);
         System.out.println("Persegi panjang ke-2, panjang: "+ ppArray[2].panjang + ", lebar: "+ ppArray[2].lebar);
+        
 
     }
 }
