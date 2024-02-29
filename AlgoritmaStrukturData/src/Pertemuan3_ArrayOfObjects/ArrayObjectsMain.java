@@ -4,25 +4,31 @@ import java.util.Scanner;
 
 public class ArrayObjectsMain {
     public static void main(String[] args) {
-        
-        PersegiPanjang[] ppArray = new PersegiPanjang[3];
         Scanner sc = new Scanner(System.in);
-
+        int jumlahPP = 0;
+        System.out.print("Masukkan jumlah persegi panjang: ");
+        jumlahPP = sc.nextInt();
+        PersegiPanjang[] ppArray = new PersegiPanjang[jumlahPP];
+        
         for (int i = 0; i < ppArray.length; i++) {
-            System.out.println("");
             ppArray[i] = new PersegiPanjang();
-            System.out.println("Persegi Panjang ke-"+ (i+1));
-            System.out.print("Masukkan Panjang: ");
+            System.out.println("Persegi Panjang ke- " + (i + 1));
+            
+            System.out.print("Masukkan panjang: ");
             ppArray[i].panjang = sc.nextInt();
-            System.out.print("Masukkan Lebar: ");
+            
+            System.out.print("Masukkan lebar: ");
             ppArray[i].lebar = sc.nextInt();
+            
+            System.out.println("");
         }
-        System.out.println();
         for (int i = 0; i < ppArray.length; i++) {
             System.out.println("Persegi Panjang ke-" +(i+1));
-            System.out.println("Panjang: "+ ppArray[i].panjang + " ,Lebar: "+ppArray[i].lebar);
+                System.out.println("Panjang: "+ ppArray[i].panjang + " ,Lebar: "+ppArray[i].lebar);
+            
         }
         sc.close();
+
 
 
     }
