@@ -10,6 +10,7 @@ public class MahasiswaMain {
         Mahasiswa mhsJml = new Mahasiswa();
         mhsJml.jumlah = jmlMhs;
         Mahasiswa[] mhsArray = new Mahasiswa[jmlMhs]; 
+        Mahasiswa mhs = new Mahasiswa(); 
         for (int i = 0; i < mhsArray.length; i++) {
             mhsArray[i] = new Mahasiswa();
         }
@@ -31,6 +32,11 @@ public class MahasiswaMain {
             System.out.print("Data Mahasiswa ke-"+(i+1));
             mhsArray[i].tampilInformasi();
         }
+        mhsJml.ratarata(mhsArray);
+        System.out.println();
+        mhsJml.topIPK(mhsArray);
+        
+        
         input.close();
     }
 }
