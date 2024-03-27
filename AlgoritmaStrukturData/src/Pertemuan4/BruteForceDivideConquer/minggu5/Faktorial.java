@@ -21,5 +21,7 @@ public class Faktorial {
             return fakto;
         }
     }
+
+ 
 }
 
