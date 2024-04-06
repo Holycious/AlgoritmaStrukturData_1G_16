@@ -6,7 +6,6 @@ public class Buku16 {
     public int tahunTerbit;
     public String pengarang;
     public int stok;
-    Buku16 dataBuku[] = new Buku16[5];
 
     public Buku16(int kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stok){
         this.kodeBuku = kodeBuku;
@@ -26,15 +25,15 @@ public class Buku16 {
         System.out.println("Stok    :  "+this.stok);
     }
 
-    public int FindBuku(int search){
-        int posisi = -1;
-        for (int i = 0; i < dataBuku.length; i++) {
-            if (dataBuku[i].kodeBuku==search) {
-                posisi = i;
-                break;
-            }
-        }
-        return posisi;
-    }
+    // public int FindBuku(int search){
+    //     int posisi = -1;
+    //     for (int i = 0; i < dataBuku.length; i++) {
+    //         if (dataBuku[i].kodeBuku==search) {
+    //             posisi = i;
+    //             break;
+    //         }
+    //     }
+    //     return posisi;
+    // }
 }
 
