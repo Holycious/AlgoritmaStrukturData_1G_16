@@ -43,9 +43,10 @@ public class BukuMain16 {
         data.TampilData(cari, posisi);
         System.out.println("====================================================");
         System.out.println("Binary Search");
-        // posisi = data.FindBinarySearch(cari, 0, jumBuku-1);
-        // data.TampilPosisi(cari, posisi);
-        // data.TampilData(cari, posisi);
+        posisi = data.FindBinarySearch(cari, 0, jumBuku-1);
+        data.TampilPosisi(cari, posisi);
+        data.TampilData(cari, posisi);
+        System.out.println("");
 
     }
     
