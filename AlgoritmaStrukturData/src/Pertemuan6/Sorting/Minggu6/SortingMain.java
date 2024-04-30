@@ -19,9 +19,9 @@ public class SortingMain {
         System.out.println("=================================");
         list.tampil();
 
-        System.out.println(" Data Mahasiswa setelah sorting  ");
+        System.out.println(" Data Mahasiswa setelah sorting asc berdasarkan ipk  ");
         System.out.println("=================================");
-        list.bubblesort();
+        list.insertionsort();
         list.tampil();
     }
 }
