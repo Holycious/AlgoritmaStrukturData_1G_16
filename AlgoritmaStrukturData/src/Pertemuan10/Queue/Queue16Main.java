@@ -44,7 +44,9 @@ public class Queue16Main {
                 case 4:
                     line.print();
                     break;
-                
+                case 5:
+                    line.peekRear();
+                    break;
             }
         } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5);
     }
@@ -55,6 +57,7 @@ public class Queue16Main {
         System.out.println("(2.) Antrian Keluar");
         System.out.println("(3.) Cek Antrian Terdepan");
         System.out.println("(4.) Cek Semua Antrian");
+        System.out.println("(5.) Cek Antrian Paling Belakang");
         System.out.println("=================================");
     }
 }
