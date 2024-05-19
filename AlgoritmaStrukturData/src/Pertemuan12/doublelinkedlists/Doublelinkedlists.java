@@ -119,7 +119,7 @@ public class Doublelinkedlists {
   void remove(int index) throws Exception{
     if (isEmpty() || index >= size) {
       throw new Exception("Nilai indesx di luar batas");
-    } else if (index == 0 {
+    } else if (index == 0) {
       removeFirst();
     } else {
       Node current = head;
@@ -140,5 +140,34 @@ public class Doublelinkedlists {
       }
       size--;
     }
+  }
+
+  int getFirst() throws Exception{
+    if (isEmpty()) {
+      throw new Exception("Linked List Kosong");
+    }
+    return head.data;
+  }
+
+  int getLast() throws Exception{
+    if (isEmpty()) {
+      throw new Exception("Linked List Kosong");
+    }
+    Node tmp = head;
+    while (tmp.next != null) {
+      tmp = tmp.next;
+    }
+    return tmp.data;
+  }
+
+  int get(int index) throws Exception {
+    if (isEmpty() || index >= size) {
+      throw new Exception("Nilai indeks di luar batas");
+  }
+  Node tmp = head;
+  for (int i = 0; i < index; i++) {
+    tmp = tmp.next;
+  }
+  return tmp.data;
   }
 }
