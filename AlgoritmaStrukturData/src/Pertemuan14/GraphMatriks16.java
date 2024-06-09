@@ -51,5 +51,6 @@ public class GraphMatriks16 {
 
     public int Degree(int gedung){
         return InDegree(gedung) + OutDegree(gedung);
+        //
     }
 }
