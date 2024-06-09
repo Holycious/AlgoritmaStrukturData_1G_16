@@ -33,46 +33,6 @@ public class DoubleLinkedLists16 {
       size = 0;
     }
   
-    void print() {
-      if (!isEmpty()) {
-        Node16 tmp = head;
-        while (tmp != null) {
-          System.out.print(tmp.data + "\t");
-          tmp = tmp.next;
-        }
-        System.out.println("\nberhasil diisi");
-      } else {
-        System.out.println("Linked list kosong");
-      }
-    }
-  
-    void removeFirst() throws Exception {
-      if (isEmpty()) {
-        throw new Exception("Linked list masih kosong, tidak dapat dihapus");
-      } else if (size == 1) {
-        removeLast();
-      } else {
-        head = head.next;
-        head.prev = null;
-        size--;
-      }
-    }
-  
-    void removeLast() throws Exception {
-      if (isEmpty()) {
-        throw new Exception("Linked list masih kosong, tidak dapat dihapus");
-      } else if (head.next == null) {
-        head = null;
-        size--;
-        return;
-      }
-      Node16 current = head;
-      while (current.next.next != null) {
-        current = current.next;
-      }
-      current.next = null;
-      size--;
-    }
   
     void remove(int index) throws Exception{
         if (isEmpty() || index >= size)  {
@@ -91,24 +51,6 @@ public class DoubleLinkedLists16 {
         current.next.prev = current.prev;
       }
       size--;
-    }
-  
-    int getFirst() throws Exception{
-      if (isEmpty()) {
-        throw new Exception("Linked List Kosong");
-      }
-      return head.data;
-    }
-  
-    int getLast() throws Exception{
-      if (isEmpty()) {
-        throw new Exception("Linked List Kosong");
-      }
-      Node16 tmp = head;
-      while (tmp.next != null) {
-        tmp = tmp.next;
-      }
-      return tmp.data;
     }
   
     int get(int index) throws Exception {
