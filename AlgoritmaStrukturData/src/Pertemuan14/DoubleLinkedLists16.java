@@ -75,21 +75,22 @@ public class DoubleLinkedLists16 {
     }
   
     void remove(int index) throws Exception{
-      Node16 current = head;
-      while (current != null) {
-        if (current.data == index) {
-            if (current.prev != null) {
-                current.prev.next = current.next;
-            } else {
-                head = current.next;
-            }
-            if (current.next != null) {
-                current.next.prev = current.prev;
-            }
-            break;
+        if (isEmpty() || index >= size)  {
+            throw new Exception("Nilai indeks di luar batas");
         }
+      Node16 current = head;
+      for (int i = 0; i < index; i++) {
         current = current.next;
       }
+      if (current.prev != null) {
+        current.prev.next = current.next;
+      } else {
+        head = current.next;
+      }
+      if (current.next != null) {
+        current.next.prev = current.prev;
+      }
+      size--;
     }
   
     int getFirst() throws Exception{

@@ -39,9 +39,10 @@ public class Graph16 {
     }
 
     public void removeEdge(int asal, int tujuan) throws Exception {
-        for (int i = 0; i < vertex; i++) {
-            if (i == tujuan) {
-                list[asal].remove(tujuan);
+        for (int i = 0; i < list[asal].size(); i++) {
+            if (list[asal].get(i) == tujuan) {
+                list[asal].remove(i);
+                break;
             }
         }
     }
